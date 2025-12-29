@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Green rounded square background -->
+  <rect x="10" y="10" width="80" height="80" rx="12" fill="#2da44e"/>
+  
+  <!-- "LP" text: LinkiePin initials -->
+  <text x="50" y="65" font-size="50" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial, sans-serif">LP</text>
+  
+  <!-- Decorative pin icon (small circle top-right) -->
+  <circle cx="75" cy="25" r="6" fill="#fff" opacity="0.9"/>
+</svg>
