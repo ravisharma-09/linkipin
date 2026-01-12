@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkiePin - My Network</title>
+    <link rel="stylesheet" href="network.css">
+</head>
+
+<body>
+    <div class="top">
+        <input type="checkbox" id="nav-toggle" hidden>
+        <label for="nav-toggle" class="hamburger">☰</label> 
+        <!-- for resposiveness -->
+        <a class="logo" href="index.html">
+            <img src="assets/linkiepin-logo.svg" alt="LinkiePin Logo" width="50" height="50">
+        </a>
+
+        <input type="text" id="search" placeholder="Search content..." aria-label="Search">
+        <button type="button" id="btn"> search </button>
+        <div class="menu">
+            <div class="item">
+                <a href="index.html"
+                    style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24"
+                        height="24">
+                        <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z">
+                        </path>
+                    </svg>
+                    <span class="text">Home</span>
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="network.html" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                        <path
+                            d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z">
+                        </path>
+                    </svg>
+                    <span class="text">Network</span></a>
+            </div>
+
+            <div class="item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path
+                        d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z">
+                    </path>
+                </svg>
+                <span class="text">Jobs</span>
+            </div>
+
+            <div class="item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path
+                        d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z">
+                    </path>
+                </svg>
+                <span class="text">Messaging</span>
+            </div>
+
+            <div class="item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path
+                        d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z">
+                    </path>
+                </svg>
+                <span class="text">Notifications</span>
+            </div>
+
+            <div class="item me">
+                <a href="profile.html">
+                    <img width="32" height="32"
+                        src="https://media.licdn.com/dms/image/v2/D4E03AQHqYyqJW5IfAA/profile-displayphoto-scale_400_400/B4EZoq.PsKKkAg-/0/1761657553664?e=1769644800&v=beta&t=eq6BDR7_5e__nB5_qqRS5xeMl_a7FAhZypy0r7X0_g4"
+                        alt="Ravi Sharma" class="img">
+                </a>
+                <span class="text">Profile</span>
+            </div>
+        </div>
+        <div class="more">
+            <div class="item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path
+                        d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z">
+                    </path>
+                </svg><span class="text">Business</span>
+            </div>
+            <div class="item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <circle cx="12" cy="4" r="2"></circle>
+                    <path
+                        d="M21 10H3a1 1 0 00-1 1v10a1 1 0 001 1h18a1 1 0 001-1V11a1 1 0 00-1-1zm-5 9H8v-2h8v2zm2-4H6v-2h12v2z">
+                    </path>
+                    <g>
+                        <path
+                            d="M9.57 5.75l-2.41 4.83 1.68.84 2.28-4.57a3 3 0 01-1.55-1.1zM14.43 5.75a3 3 0 01-1.55 1.1l2.28 4.57 1.68-.84z">
+                        </path>
+                    </g>
+                </svg>
+                <span class="text">Hire</span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="main">
+        <aside class="left">
+            <div class="box">
+                <div class="info">
+                    <img class="pic"
+                        src="https://media.licdn.com/dms/image/v2/D4E03AQHqYyqJW5IfAA/profile-displayphoto-scale_400_400/B4EZoq.PsKKkAg-/0/1761657553664?e=1769644800&v=beta&t=eq6BDR7_5e__nB5_qqRS5xeMl_a7FAhZypy0r7X0_g4"
+                        alt="Ravi Sharma">
+                    <h3>Ravi Sharma</h3>
+                    <p class="job">Full Stack Developer | Tech Enthusiast</p>
+                </div>
+                <div class="stats">
+                    <div class="unit">
+                        <span class="num">485</span>
+                        <span class="label">Profile viewers</span>
+                    </div>
+                    <div class="unit">
+                        <span class="num">45</span>
+                        <span class="label">Post impressions</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="links">
+                <div class="row">
+                    <p class="v-align-middle">
+                        <svg role="none" aria-hidden="true" class="mr2" xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"></path>
+                        </svg>
+                        <span>Saved items</span>
+                    </p>
+                </div>
+                <div class="row">
+                    <p class="v-align-middle">
+                        <svg role="none" aria-hidden="true" class="mr2 flex-shrink-zero"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z">
+                            </path>
+                        </svg>
+
+                        <span>Groups</span>
+                    </p>
+                </div>
+                <div class="row">
+                    <p class="v-align-middle">
+                        <svg role="none" aria-hidden="true" class="mr2 flex-shrink-zero"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M20 3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14H5v-2h6v2zm0-4H5v-2h6v2zm0-4H5V7h6v2zm8 8H13v-2h6v2zm0-4H13v-2h6v2zm0-4H13V7h6v2z">
+                            </path>
+                        </svg>
+
+                        <span>Newsletters</span>
+                    </p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="mid">
+            <div class="box">
+                <div class="head">
+                    <h2>Invitations</h2>
+                    <a href="#" class="link">See all 12</a>
+                </div>
+
+                <div class="list">
+                    <div class="row">
+                        <div class="user">
+                            <img src="https://media.licdn.com/dms/image/v2/D5603AQEZbcpCW0FZzA/profile-displayphoto-shrink_100_100/B56ZdkSu_iGsAc-/0/1749734323461?e=1769644800&v=beta&t=eg-JQ5vKRFfSI3rIXjQFJX5kyXxJWv7KnoWmDqG9WHM"
+                                alt="User" class="userimg">
+                            <div class="txt">
+                                <span class="name">Jothin</span>
+                                <span class="desc">Senior React Developer at WebTech • 25 mutual connections</span>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="no">Ignore</button>
+                            <button class="yes">Accept</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="user">
+                            <img src="https://media.licdn.com/dms/image/v2/D5603AQEM1EAdmHRDJw/profile-displayphoto-scale_400_400/B56ZsxC8wFJsAg-/0/1766054416723?e=1769644800&v=beta&t=8PKty-qNnHQtW5965zPw2iw-tcw6JhMaDijVzFm5KO8"
+                                alt="User" class="userimg">
+                            <div class="txt">
+                                <span class="name">Geetansh Goyal</span>
+                                <span class="desc">Product Designer • 23 mutual connections</span>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="no">Ignore</button>
+                            <button class="yes">Accept</button>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="user">
+                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFtwJDYfvF6jg/profile-displayphoto-scale_400_400/B4DZpjR4ZsIkAg-/0/1762602226443?e=1769644800&v=beta&t=Gn8oPihvY-Ij18EGDqtjAHOGoYN-N3rNEz6lEPYo8OM"
+                                alt="User" class="userimg">
+                            <div class="txt">
+                                <span class="name">Prateek</span>
+                                <span class="desc">Developer at WebTech</span>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="no">Ignore</button>
+                            <button class="yes">Accept</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="user">
+                            <img src="https://media.licdn.com/dms/image/v2/D5603AQE0phcLJJCROg/profile-displayphoto-scale_400_400/B56Ztgor0tIcAg-/0/1766852838336?e=1769644800&v=beta&t=IR4sbPE__4NlUsShlCKfZJDUZdJMdAKjq4hKsbOcUJc"
+                                alt="User" class="userimg">
+                            <div class="txt">
+                                <span class="name">Vivaan Monga</span>
+                                <span class="desc">SnW faculty at Newton • 3 mutual connections</span>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="no">Ignore</button>
+                            <button class="yes">Accept</button>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="user">
+                            <img src="https://media.licdn.com/dms/image/v2/C4D03AQHmbioRVtkT2g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1641472109682?e=1769644800&v=beta&t=frbRAhvFTH1WEeXhPP44JgdX-1VwKqmXFupC-XuIwfM"
+                                alt="User" class="userimg">
+                            <div class="txt">
+                                <span class="name">Abhishek Sharma</span>
+                                <span class="desc">Robotics faculty at Newton</span>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="no">Ignore</button>
+                            <button class="yes">Accept</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="user">
+                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQGJXAUSyItz8g/profile-displayphoto-scale_400_400/B4DZpActwmJAAk-/0/1762017862694?e=1769644800&v=beta&t=Czhn_gw5JREl30lhy1orw-ZmWdTNe9QgVRDRKqiV6ow"
+                                alt="User" class="userimg">
+                            <div class="txt">
+                                <span class="name">Akshit Sharma</span>
+                                <span class="desc">Maths faculty at Newton • 3 mutual connections</span>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="no">Ignore</button>
+                            <button class="yes">Accept</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="head">
+                    <h2>People you may know</h2>
+                    <a href="#" class="link">See all</a>
+                </div>
+
+                <div class="grid">
+                    <!-- Person 1 -->
+                    <div class="card">
+                        <div class="bg"></div>
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHg59ZXDf1CkA/profile-displayphoto-scale_400_400/B4DZoq8rQ3GwAg-/0/1761657143878?e=1769644800&v=beta&t=vHBY8rkDsv1xeA-aP4XYWOGM5ZCihPtuXQ9VGjnhb3U"
+                            alt="Person" class="img">
+                        <div class="info">
+                            <strong class="name">Saurabh Kumar</strong>
+                            <p class="job">Software Engineer at Google</p>
+                            <p class="common">15 mutual connections</p>
+                            <button class="btn">Connect</button>
+                        </div>
+                    </div>
+
+                    <!-- Person 2 -->
+                    <div class="card">
+                        <div class="bg"></div>
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQEiN1nT5XIScw/profile-displayphoto-shrink_400_400/B56ZjYd6NHH8Ak-/0/1755978378362?e=1769644800&v=beta&t=UhkLM91_dbGGYxRzLXBfNZMKdzfaQm9juuJQUQpScrQ"
+                            alt="Person" class="img">
+                        <div class="info">
+                            <strong class="name">Anureet Kaur</strong>
+                            <p class="job">UX Researcher at Microsoft</p>
+                            <p class="common">8 mutual connections</p>
+                            <button class="btn">Connect</button>
+                        </div>
+                    </div>
+
+                    <!-- Person 3 -->
+                    <div class="card">
+                        <div class="bg"></div>
+                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQGMXjI8dcoFkw/profile-displayphoto-scale_400_400/B4EZiOBtrEHgAo-/0/1754729473227?e=1769644800&v=beta&t=kmatQS9mxxdQUyGFKXAql9qhH2GldpNBTqXWMtOvJ8U"
+                            alt="Person" class="img">
+                        <div class="info">
+                            <strong class="name">KHUSH KALRA</strong>
+                            <p class="job">Full Stack Dev | Open for work</p>
+                            <p class="common">2 mutual connections</p>
+                            <button class="btn">Connect</button>
+                        </div>
+                    </div>
+
+                    <!-- Person 4 -->
+                    <div class="card">
+                        <div class="bg"></div>
+                        <img src="data:image/jpeg;base64,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"
+                            alt="Person" class="img">
+                        <div class="info">
+                            <strong class="name">Ankur Bhadauria</strong>
+                            <p class="job">PsP Faculty at Newton</p>
+                            <p class="common">12 mutual connections</p>
+                            <button class="btn">Connect</button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="bg"></div>
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQH0mTElpbfoWg/profile-displayphoto-scale_400_400/B56ZpaM37sHAAg-/0/1762449920459?e=1769644800&v=beta&t=PrHhFS6inD3i2lmSo-tzBJ87YYPWFmotP6mMlzUv1B0"
+                            alt="Person" class="img">
+                        <div class="info">
+                            <strong class="name">Sahitya Singh</strong>
+                            <p class="job">Software Engineer at Google</p>
+                            <p class="common">15 mutual connections</p>
+                            <button class="btn">Connect</button>
+                        </div>
+                    </div>
+
+                  
+                    <div class="card">
+                        <div class="bg"></div>
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQFXNMDLdrkdRQ/profile-displayphoto-scale_400_400/B56ZnjziG.I8Ak-/0/1760463564117?e=1769644800&v=beta&t=lNeJANerBs-LJWMeJRciv_nRyIBp08nfejPC7rVP2hs"
+                            alt="Person" class="img">
+                        <div class="info">
+                            <strong class="name">Sk Izaz Sharma</strong>
+                            <p class="job">UX Researcher at Microsoft</p>
+                            <p class="common">8 mutual connections</p>
+                            <button class="btn">Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
