@@ -87,6 +87,7 @@ body {
 }
 
 .top #btn {
+    display: flex;
     padding: 8px 14px;
     margin-left: 6px;
     min-width: 64px;
@@ -506,41 +507,92 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 /*  on desktop */
 .hamburger {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
 }
 
 /*Mobile  */
 @media (max-width: 600px) {
 
-  .menu,
-  .more {
-    display: none;
-  }
+    .main,
+    .mid {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block;
+
+    }
+
+    .menu .text,
+    .more .text {
+        display: none;
+    }
+
+    .top {
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    .top #search {
+        display: block;
+        width: auto;
+        min-width: 80px;
+        flex: 1;
+    }
+
+    .top #btn {
+        display: flex;
+        padding: 8px 10px;
+    }
 
 
-  /* Show hamburger */
-  .hamburger {
-    display: block;
-  }
 
-  #nav-toggle:checked ~ .menu
-   {
-    display: flex;
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    padding: 12px;
-    border-radius: 8px;
-    z-index: 1000;
-  }
+    .menu,
+    .more {
+        display: none;
+    }
 
-  .menu .item{
-    padding: 10px;
-  }
+
+    .list .row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .list .row .btns {
+        width: 100%;
+        justify-content: flex-end;
+
+    }
+
+    /* Show hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    #nav-toggle:checked~.menu {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        padding: 12px;
+        border-radius: 8px;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Ensure text shows in hamburger menu */
+    #nav-toggle:checked~.menu .text {
+        display: block;
+    }
+
+    .menu .item {
+        padding: 10px;
+        align-items: flex-start;
+    }
 }

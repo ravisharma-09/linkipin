@@ -72,6 +72,7 @@ body {
 }
 
 .top #btn {
+    display: flex;
     padding: 8px 14px;
     margin-left: 6px;
     min-width: 64px;
@@ -441,41 +442,41 @@ button {
         flex-direction: column;
     }
 }
+
 /*  on desktop */
 .hamburger {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
 }
 
 /*Mobile  */
 @media (max-width: 600px) {
 
-  .menu,
-  .more {
-    display: none;
-  }
+    .menu,
+    .more {
+        display: none;
+    }
 
 
-  /* Show hamburger */
-  .hamburger {
-    display: block;
-  }
+    /* Show hamburger */
+    .hamburger {
+        display: block;
+    }
 
-  #nav-toggle:checked ~ .menu
-   {
-    display: flex;
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    padding: 12px;
-    border-radius: 8px;
-    z-index: 1000;
-  }
+    #nav-toggle:checked~.menu {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        padding: 12px;
+        border-radius: 8px;
+        z-index: 1000;
+    }
 
-  .menu .item{
-    padding: 10px;
-  }
+    .menu .item {
+        padding: 10px;
+    }
 }
