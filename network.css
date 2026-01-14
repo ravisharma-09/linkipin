@@ -1,4 +1,4 @@
-/* Network Page - Body CSS Only */
+
 
 * {
     margin: 0;
@@ -586,7 +586,7 @@ body {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    /* Ensure text shows in hamburger menu */
+    
     #nav-toggle:checked~.menu .text {
         display: block;
     }
