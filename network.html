@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LinkiePin - My Network</title>
     <link rel="stylesheet" href="network.css">
+    <script>
+        function removeRequest(button) {
+            // get .btns div
+            var buttonsDiv = button.parentElement;
+
+            // get main .row div
+            var requestRow = buttonsDiv.parentElement;
+
+            // remove the row
+            requestRow.remove();
+        }
+    </script>
 </head>
 
 <body>
     <div class="top">
         <input type="checkbox" id="nav-toggle" hidden>
-        <label for="nav-toggle" class="hamburger">☰</label> 
+        <label for="nav-toggle" class="hamburger">☰</label>
         <!-- for resposiveness -->
         <a class="logo" href="home.html">
             <img src="assets/linkiepin-logo.svg" alt="LinkiePin Logo" width="50" height="50">
@@ -185,8 +197,8 @@
                             </div>
                         </div>
                         <div class="btns">
-                            <button class="no">Ignore</button>
-                            <button class="yes">Accept</button>
+                            <button class="no" onclick="removeRequest(this)">Ignore</button>
+                            <button class="yes" onclick="removeRequest(this)">Accept</button>
                         </div>
                     </div>
 
@@ -200,10 +212,10 @@
                             </div>
                         </div>
                         <div class="btns">
-                            <button class="no">Ignore</button>
-                            <button class="yes">Accept</button>
+                            <button class="no" onclick="removeRequest(this)">Ignore</button>
+                            <button class="yes" onclick="removeRequest(this)">Accept</button>
                         </div>
-                        
+
                     </div>
                     <div class="row">
                         <div class="user">
@@ -215,8 +227,8 @@
                             </div>
                         </div>
                         <div class="btns">
-                            <button class="no">Ignore</button>
-                            <button class="yes">Accept</button>
+                            <button class="no" onclick="removeRequest(this)">Ignore</button>
+                            <button class="yes" onclick="removeRequest(this)">Accept</button>
                         </div>
                     </div>
 
@@ -230,10 +242,10 @@
                             </div>
                         </div>
                         <div class="btns">
-                            <button class="no">Ignore</button>
-                            <button class="yes">Accept</button>
+                            <button class="no" onclick="removeRequest(this)">Ignore</button>
+                            <button class="yes" onclick="removeRequest(this)">Accept</button>
                         </div>
-                        
+
                     </div>
                     <div class="row">
                         <div class="user">
@@ -245,8 +257,8 @@
                             </div>
                         </div>
                         <div class="btns">
-                            <button class="no">Ignore</button>
-                            <button class="yes">Accept</button>
+                            <button class="no" onclick="removeRequest(this)">Ignore</button>
+                            <button class="yes" onclick="removeRequest(this)">Accept</button>
                         </div>
                     </div>
 
@@ -260,10 +272,10 @@
                             </div>
                         </div>
                         <div class="btns">
-                            <button class="no">Ignore</button>
-                            <button class="yes">Accept</button>
+                            <button class="no" onclick="removeRequest(this)">Ignore</button>
+                            <button class="yes" onclick="removeRequest(this)">Accept</button>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -327,7 +339,7 @@
                         </div>
                     </div>
 
-                    
+
                     <div class="card">
                         <div class="bg"></div>
                         <img src="https://media.licdn.com/dms/image/v2/D5603AQH0mTElpbfoWg/profile-displayphoto-scale_400_400/B56ZpaM37sHAAg-/0/1762449920459?e=1769644800&v=beta&t=PrHhFS6inD3i2lmSo-tzBJ87YYPWFmotP6mMlzUv1B0"
@@ -340,7 +352,7 @@
                         </div>
                     </div>
 
-                  
+
                     <div class="card">
                         <div class="bg"></div>
                         <img src="https://media.licdn.com/dms/image/v2/D5603AQFXNMDLdrkdRQ/profile-displayphoto-scale_400_400/B56ZnjziG.I8Ak-/0/1760463564117?e=1769644800&v=beta&t=lNeJANerBs-LJWMeJRciv_nRyIBp08nfejPC7rVP2hs"
