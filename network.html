@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkiePin - My Network</title>
+    <link rel="stylesheet" href="network.css">
+    <script>
+        function removeRequest(button) {
+
+            var buttonsDiv = button.parentElement;
+
+
+            var requestRow = buttonsDiv.parentElement;
+
+
+            requestRow.remove();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="top">
+        <input type="checkbox" id="menu-btn" hidden>
+        <label for="menu-btn" class="hamburger">☰</label>
+        <!-- for resposiveness -->
+        <a class="logo" href="home.html">
+            <img src="assets/linkiepin-logo.svg" alt="LinkiePin Logo" width="50" height="50">
+        </a>
+
+        <input type="text" id="search" placeholder="Search content..." aria-label="Search">
+        <button type="button" id="btn"> search </button>
+        <div class="menu">
+            <div class="item">
+                <a href="home.html"
+                    style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24"
+                        height="24">
+                        <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z">
+                        </path>
+                    </svg>
+                    <span class="text">Home</span>
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="network.html" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                        <path
+                            d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z">
+                        </path>
+                    </svg>
+                    <span class="text">Network</span></a>
+            </div>
+
+            <div class="item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path
+                        d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z">
+                    </path>
+                </svg>
+                <span class="text">Jobs</span>
+            </div>
+
+            <div class="item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path
+                        d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z">
+                    </path>
+                </svg>
+                <span class="text">Messaging</span>
+            </div>
+
+            <div class="item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path
+                        d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z">
+                    </path>
+                </svg>
+                <span class="text">Notifications</span>
+            </div>
+
+            <div class="item me">
+                <a href="profile.html">
+                    <img width="32" height="32"
+                        src="https://media.licdn.com/dms/image/v2/D4E03AQHqYyqJW5IfAA/profile-displayphoto-scale_400_400/B4EZoq.PsKKkAg-/0/1761657553664?e=1775088000&v=beta&t=aynf7wE1-Gbl1zml3aQWh4zdkXUf3_749U0jV3-gcss"
+                        alt="Ravi Sharma" class="img">
+                </a>
+                <span class="text">Profile</span>
+            </div>
+        </div>
+        <div class="more">
+            <div class="item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path
+                        d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z">
+                    </path>
+                </svg><span class="text">Business</span>
+            </div>
+            <div class="item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <circle cx="12" cy="4" r="2"></circle>
+                    <path
+                        d="M21 10H3a1 1 0 00-1 1v10a1 1 0 001 1h18a1 1 0 001-1V11a1 1 0 00-1-1zm-5 9H8v-2h8v2zm2-4H6v-2h12v2z">
+                    </path>
+                    <g>
+                        <path
+                            d="M9.57 5.75l-2.41 4.83 1.68.84 2.28-4.57a3 3 0 01-1.55-1.1zM14.43 5.75a3 3 0 01-1.55 1.1l2.28 4.57 1.68-.84z">
+                        </path>
+                    </g>
+                </svg>
+                <span class="text">Hire</span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="main">
+        <aside class="left">
+            <div class="box">
+                <div class="info">
+                    <img class="pic"
+                        src="https://media.licdn.com/dms/image/v2/D4E03AQHqYyqJW5IfAA/profile-displayphoto-scale_400_400/B4EZoq.PsKKkAg-/0/1761657553664?e=1775088000&v=beta&t=aynf7wE1-Gbl1zml3aQWh4zdkXUf3_749U0jV3-gcss"
+                        alt="Ravi Sharma">
+                    <h3>Ravi Sharma</h3>
+                    <p class="job">Full Stack Developer | Tech Enthusiast</p>
+                </div>
+                <div class="stats">
+                    <div class="unit">
+                        <span class="num">485</span>
+                        <span class="label">Profile viewers</span>
+                    </div>
+                    <div class="unit">
+                        <span class="num">45</span>
+                        <span class="label">Post impressions</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="links">
+                <div class="row">
+                    <p>
+                        <svg role="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"></path>
+                        </svg>
+                        <span>Saved items</span>
+                    </p>
+                </div>
+                <div class="row">
+                    <p>
+                        <svg role="none" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z">
+                            </path>
+                        </svg>
+
+                        <span>Groups</span>
+                    </p>
+                </div>
+                <div class="row">
+                    <p>
+                        <svg role="none" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M20 3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14H5v-2h6v2zm0-4H5v-2h6v2zm0-4H5V7h6v2zm8 8H13v-2h6v2zm0-4H13v-2h6v2zm0-4H13V7h6v2z">
+                            </path>
+                        </svg>
+
+                        <span>Newsletters</span>
+                    </p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="mid">
+            <div class="box">
+                <div class="head">
+                    <h2>Invitations</h2>
+                    <a href="#" class="link">See all 12</a>
+                </div>
+
+                <div class="list">
+                    <div class="row">
+                        <div class="user">
+                            <img src="assets/linki.jpeg"
+                                alt="User" class="userimg">
+                            <div class="txt">
+                                <span class="name">Jothin</span>
+                                <span class="desc">Senior React Developer at WebTech • 25 mutual connections</span>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="no" onclick="removeRequest(this)">Ignore</button>
+                            <button class="yes" onclick="removeRequest(this)">Accept</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="user">
+                            <img src="assets/linki.jpeg"
+                                alt="User" class="userimg">
+                            <div class="txt">
+                                <span class="name">Adarsh Patel</span>
+                                <span class="desc">Technical Program Manager</span>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="no" onclick="removeRequest(this)">Ignore</button>
+                            <button class="yes" onclick="removeRequest(this)">Accept</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="user">
+                            <img src="assets/linki.jpeg"
+                                alt="User" class="userimg">
+                            <div class="txt">
+                                <span class="name">Geetansh Goyal</span>
+                                <span class="desc">Product Designer • 23 mutual connections</span>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="no" onclick="removeRequest(this)">Ignore</button>
+                            <button class="yes" onclick="removeRequest(this)">Accept</button>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="user">
+                            <img src="assets/linki.jpeg"
+                                alt="User" class="userimg">
+                            <div class="txt">
+                                <span class="name">Prateek</span>
+                                <span class="desc">Developer at WebTech</span>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="no" onclick="removeRequest(this)">Ignore</button>
+                            <button class="yes" onclick="removeRequest(this)">Accept</button>
+                        </div>
+                    </div>
+                    
+
+                    <div class="row">
+                        <div class="user">
+                            <img src="assets/linki.jpeg"
+                                alt="User" class="userimg">
+                            <div class="txt">
+                                <span class="name">Vivaan Monga</span>
+                                <span class="desc">SnW faculty at Newton • 3 mutual connections</span>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="no" onclick="removeRequest(this)">Ignore</button>
+                            <button class="yes" onclick="removeRequest(this)">Accept</button>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="user">
+                            <img src="assets/linki.jpeg"
+                                alt="User" class="userimg">
+                            <div class="txt">
+                                <span class="name">Abhishek Sharma</span>
+                                <span class="desc">Robotics faculty at Newton</span>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="no" onclick="removeRequest(this)">Ignore</button>
+                            <button class="yes" onclick="removeRequest(this)">Accept</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="user">
+                            <img src="assets/linki.jpeg"
+                                alt="User" class="userimg">
+                            <div class="txt">
+                                <span class="name">Akshit Sharma</span>
+                                <span class="desc">Maths faculty at Newton • 3 mutual connections</span>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="no" onclick="removeRequest(this)">Ignore</button>
+                            <button class="yes" onclick="removeRequest(this)">Accept</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="head">
+                    <h2>People you may know</h2>
+                    <a href="#" class="link">See all</a>
+                </div>
+
+                <div class="grid">
+                    <!-- Person 1 -->
+                    <div class="card">
+                        <div class="bg"></div>
+                        <img src="assets/linki.jpeg"
+                            alt="Person" class="img">
+                        <div class="info">
+                            <strong class="name">Saurabh Kumar</strong>
+                            <p class="job">Software Engineer at Google</p>
+                            <p>15 mutual connections</p>
+                            <button class="btn" onclick="removeRequest(this)">Connect</button>
+                        </div>
+                    </div>
+
+                    <!-- Person 2 -->
+                    <div class="card">
+                        <div class="bg"></div>
+                        <img src="assets/linki.jpeg"
+                            alt="Person" class="img">
+                        <div class="info">
+                            <strong class="name">Shubham Sagar</strong>
+                            <p class="job">learning</p>
+                            <p>8 mutual connections</p>
+                            <button class="btn" onclick="removeRequest(this)">Connect</button>
+                        </div>
+                    </div>
+
+                    <!-- Person 3 -->
+                    <div class="card">
+                        <div class="bg"></div>
+                        <img src="assets/linki.jpeg"
+                            alt="Person" class="img">
+                        <div class="info">
+                            <strong class="name">KHUSH KALRA</strong>
+                            <p class="job">Full Stack Dev | Open for work</p>
+                            <p>2 mutual connections</p>
+                            <button class="btn" onclick="removeRequest(this)">Connect</button>
+                        </div>
+                    </div>
+
+                    <!-- Person 4 -->
+                    <div class="card">
+                        <div class="bg"></div>
+                        <img src="assets/linki.jpeg"
+                            alt="Person" class="img">
+                        <div class="info">
+                            <strong class="name">Ankur Bhadauria</strong>
+                            <p class="job">PsP Faculty at Newton</p>
+                            <p>12 mutual connections</p>
+                            <button class="btn" onclick="removeRequest(this)">Connect</button>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="bg"></div>
+                        <img src="assets/linki.jpeg"
+                            alt="Person" class="img">
+                        <div class="info">
+                            <strong class="name">Sahitya Singh</strong>
+                            <p class="job">Software Engineer at Google</p>
+                            <p>15 mutual connections</p>
+                            <button class="btn" onclick="removeRequest(this)">Connect</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="bg"></div>
+                        <img src="assets/linki.jpeg"
+                            alt="Person" class="img">
+                        <div class="info">
+                            <strong class="name">Priyanshu Verma</strong>
+                            <p class="job">Software engineer at @Newton School </p>
+                            <p>15 mutual connections</p>
+                            <button class="btn" onclick="removeRequest(this)">Connect</button>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="bg"></div>
+                        <img src="assets/linki.jpeg"
+                            alt="Person" class="img">
+                        <div class="info">
+                            <strong class="name">Sk Izaz</strong>
+                            <p class="job">UX Researcher at Microsoft</p>
+                            <p>8 mutual connections</p>
+                            <button class="btn" onclick="removeRequest(this)">Connect</button>
+                       
+                    </div>
+                     </div>
+                        <div class="card">
+                        <div class="bg"></div>
+                        <img src="assets/linki.jpeg"
+                            alt="Person" class="img">
+                        <div class="info">
+                            <strong class="name">Vijay Kumar Jat </strong>
+                            <p class="job">Operations & Compliance Analyst | Data Analysis & Reporting | @Newton</p>
+                            <p>8 mutual connections</p>
+                            <button class="btn" onclick="removeRequest(this)">Connect</button>
+                        </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
